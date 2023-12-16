@@ -27,7 +27,6 @@ def filter_files(update: NewMessage.Event | Message):
     return bool(
         (
             update.document
-            or update.photo
             or update.video
             or update.video_note
             or update.audio
