@@ -46,7 +46,6 @@ def get_file_properties(message: Message):
             'video': 'mp4',
             'audio': 'mp3',
             'voice': 'ogg',
-            'photo': 'jpg',
             'video_note': 'mp4'
         }
 
