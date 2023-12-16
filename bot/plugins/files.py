@@ -28,11 +28,11 @@ async def user_file_handler(event: NewMessage.Event | Message):
             buttons=[
                 [
                     Button.url('Download', dl_link),
-                    Button.url('Stream', stream_link)
+                    Button.url('', stream_link)
                 ],
                 [
                     Button.url('Get File', deep_link),
-                    Button.inline('Revoke', f'rm_{message_id}_{secret_code}')
+                    Button.inline('', f'rm_{message_id}_{secret_code}')
                 ]
             ]
         )
@@ -42,10 +42,10 @@ async def user_file_handler(event: NewMessage.Event | Message):
             buttons=[
                 [
                     Button.url('Download', dl_link),
-                    Button.url('Get File', deep_link)
+                    Button.url('', deep_link)
                 ],
                 [
-                    Button.inline('Revoke', f'rm_{message_id}_{secret_code}')
+                    Button.inline('', f'rm_{message_id}_{secret_code}')
                 ]
             ]
         )
@@ -68,7 +68,7 @@ async def channel_file_handler(event: NewMessage.Event | Message):
             await event.edit(
                 buttons=[
                     [Button.url("Download", dl_link), Button.url("Stream", stream_link)],
-                    [Button.url("Get File", tg_link)],
+                    [Button.url("", tg_link)],
                 ]
             )
         except (
