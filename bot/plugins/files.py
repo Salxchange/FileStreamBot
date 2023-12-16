@@ -67,7 +67,7 @@ async def channel_file_handler(event: NewMessage.Event | Message):
         try:
             await event.edit(
                 buttons=[
-                    [Button.url("🍿 𝖲𝗍𝗋𝖾𝖺𝗆 🍿", dl_link), Button.url("Stream", stream_link)],
+                    [Button.url("🍿 𝖲𝗍𝗋𝖾𝖺𝗆 🍿", dl_link), Button.url("", stream_link)],
                     [Button.url("", tg_link)],
                 ]
             )
@@ -81,7 +81,7 @@ async def channel_file_handler(event: NewMessage.Event | Message):
         try:
             await event.edit(
                 buttons=[
-                    [Button.url("🍿 𝖲𝗍𝗋𝖾𝖺𝗆 🍿", dl_link), Button.url("Get File", tg_link)]
+                    [Button.url("🍿 𝖲𝗍𝗋𝖾𝖺𝗆 🍿", dl_link), Button.url("", tg_link)]
                 ]
             )
         except (
