@@ -13,7 +13,7 @@ from bot.modules.static import *
 @verify_user(private=True)
 async def user_file_handler(event: NewMessage.Event | Message):
     secret_code = token_hex(Telegram.SECRET_CODE_LENGTH)
-    event.message.text = f'`{secret_code}`'
+    event.message.text = f'```{secret_code}```'
     message = await send_message(event.message)
     message_id = message.id
 
