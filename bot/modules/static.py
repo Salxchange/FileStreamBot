@@ -27,17 +27,17 @@ UserInfoText = \
 FileLinksText = \
 """
 **Download Link/Stream Link:**
-```%(dl_link)s```
+`%(dl_link)s`
 **Telegram File:**
-```%(tg_link)s```
+`%(tg_link)s`
 """
 
 MediaLinksText = \
 """
 **Download Link/Stream Link:**
-```%(dl_link)s```
+`%(dl_link)s`
 **Telegram File:**
-```%(tg_link)s```
+`%(tg_link)s`
 """
 
 InvalidQueryText = \
